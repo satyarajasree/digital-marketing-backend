@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-family: Arial, sans-serif; background-color: #fafafa; padding: 20px;">
+    <table width="100%" style="max-width: 600px; margin: auto; background: white; border-radius: 8px; padding: 20px;">
+      <tr>
+        <td>
+          <h2 style="color: #f59e0b;">Thank You for Applying!</h2>
+          <p>Hi {{ full_name }},</p>
+          <p>
+            We’ve received your application for
+            <strong>{{ desired_position }}</strong>. Our team will review your submission and get back to you if your profile matches our needs.
+          </p>
+          <p>
+            We appreciate your interest in joining our team and wish you the best of luck!
+          </p>
+          <br />
+          <p>Warm regards,</p>
+          <p><strong>The HR Team</strong><br />{{ settings.SITE_NAME|default:"Our Company" }}</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
